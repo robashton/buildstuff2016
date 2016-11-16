@@ -1,0 +1,1066 @@
+
+Main.elm,336
+module MainMain1,0
+type alias Model =type9,116
+type alias ModelModel9,116
+type MsgMsg14,175
+    = HttpFailHttpFail15,184
+    | PostsLoadedPostsLoaded16,206
+init =init20,262
+loadPosts =loadPosts27,325
+update msg model =update32,434
+view model =view43,697
+subscriptions model =subscriptions48,777
+main =main52,814
+
+elm-stuff/packages/elm-lang/html/1.1.0/src/Html/Keyed.elm,84
+module Html.KeyedHtml.Keyed1,0
+node =node35,967
+ol =ol41,1072
+ul =ul47,1164
+
+elm-stuff/packages/elm-lang/html/1.1.0/src/Html/Lazy.elm,95
+module Html.LazyHtml.Lazy1,0
+lazy =lazy33,1213
+lazy2 =lazy240,1342
+lazy3 =lazy347,1485
+
+elm-stuff/packages/elm-lang/html/1.1.0/src/Html/App.elm,211
+module Html.AppHtml.App1,0
+map =map74,2029
+beginnerProgram {model, view, update} =beginnerProgram107,3100
+program app =program153,5073
+var app =var164,5352
+programWithFlags =programWithFlags177,5633
+
+elm-stuff/packages/elm-lang/html/1.1.0/src/Html/Events.elm,861
+module Html.EventsHtml.Events1,0
+import Json.Decode as Json exposing ((:=import39,947
+onClick msg =onClick49,1066
+onDoubleClick msg =onDoubleClick55,1157
+onMouseDown msg =onMouseDown61,1255
+onMouseUp msg =onMouseUp67,1350
+onMouseEnter msg =onMouseEnter73,1444
+onMouseLeave msg =onMouseLeave79,1544
+onMouseOver msg =onMouseOver85,1643
+onMouseOut msg =onMouseOut91,1739
+onInput tagger =onInput109,2283
+onCheck tagger =onCheck120,2650
+onSubmit msg =onSubmit131,3098
+onSubmitOptions =onSubmitOptions136,3201
+onBlur msg =onBlur145,3320
+onFocus msg =onFocus151,3403
+on =on184,4541
+onWithOptions =onWithOptions191,4686
+type alias Options =type201,5107
+type alias OptionsOptions201,5107
+defaultOptions =defaultOptions215,5358
+targetValue =targetValue236,5825
+targetChecked =targetChecked250,6170
+keyCode =keyCode268,6711
+
+elm-stuff/packages/elm-lang/html/1.1.0/src/Html/Attributes.elm,3392
+module Html.AttributesHtml.Attributes1,0
+style =style147,4438
+classList list =classList168,4964
+property =property194,5486
+stringProperty name string =stringProperty199,5572
+boolProperty name bool =boolProperty204,5687
+attribute =attribute221,6155
+class name =class231,6317
+hidden bool =hidden237,6443
+id name =id245,6617
+title name =title251,6761
+accesskey char =accesskey261,6952
+contenteditable bool =contenteditable267,7123
+contextmenu value =contextmenu275,7314
+dir value =dir283,7496
+draggable value =draggable289,7626
+dropzone value =dropzone295,7783
+itemprop value =itemprop301,7877
+lang value =lang307,8010
+spellcheck bool =spellcheck313,8158
+tabindex n =tabindex321,8331
+async bool =async331,8506
+charset value =charset343,8797
+content value =content351,8970
+defer bool =defer359,9135
+httpEquiv value =httpEquiv368,9434
+language value =language374,9579
+scoped bool =scoped382,9760
+src value =src394,9990
+height value =height402,10161
+width value =width410,10347
+alt value =alt418,10535
+autoplay bool =autoplay428,10696
+controls bool =controls436,10873
+loop bool =loop444,11055
+preload value =preload450,11209
+poster value =poster458,11383
+default bool =default466,11576
+kind value =kind472,11697
+label value =label479,11912
+srclang value =srclang486,12080
+sandbox value =sandbox498,12270
+seamless bool =seamless504,12422
+srcdoc value =srcdoc512,12657
+type' value =type'524,12857
+value value =value532,13063
+defaultValue value =defaultValue541,13365
+checked bool =checked547,13523
+placeholder value =placeholder555,13697
+selected bool =selected561,13850
+accept value =accept573,14040
+acceptCharset value =acceptCharset580,14176
+action value =action587,14355
+autocomplete bool =autocomplete595,14551
+autofocus bool =autofocus603,14803
+autosave value =autosave613,15141
+disabled bool =disabled621,15368
+enctype value =enctype630,15618
+formaction value =formaction638,15822
+list value =list648,16146
+minlength n =minlength656,16304
+maxlength n =maxlength664,16480
+method value =method672,16662
+multiple bool =multiple680,16891
+name value =name689,17203
+novalidate bool =novalidate697,17368
+pattern value =pattern705,17543
+readonly bool =readonly711,17692
+required bool =required719,17883
+size n =size728,18101
+for value =for736,18277
+form value =form745,18543
+max value =max757,18797
+min value =min765,19023
+step n =step773,19212
+cols n =cols782,19360
+rows n =rows788,19487
+wrap value =wrap796,19674
+ismap value =ismap809,19928
+usemap value =usemap818,20201
+shape value =shape827,20478
+coords value =coords835,20707
+challenge value =challenge846,20891
+keytype value =keytype854,21077
+align value =align867,21336
+cite value =cite875,21527
+href value =href886,21703
+target value =target901,22142
+download bool =download909,22310
+downloadAs value =downloadAs917,22545
+hreflang value =hreflang924,22720
+media value =media932,22897
+ping value =ping940,23106
+rel value =rel948,23281
+datetime value =datetime960,23467
+pubdate value =pubdate968,23660
+reversed bool =reversed980,23871
+start n =start988,24042
+colspan n =colspan1000,24234
+headers value =headers1008,24439
+rowspan n =rowspan1016,24605
+scope value =scope1024,24787
+manifest value =manifest1030,24935
+span n =span1037,25158
+
+elm-stuff/packages/elm-lang/html/1.1.0/src/Html.elm,2429
+module HtmlHtml1,0
+type alias Html msg =type92,2084
+type alias HtmlHtml92,2084
+type alias Attribute msg =type97,2166
+type alias AttributeAttribute97,2166
+node =node115,2678
+text =text125,2866
+body =body137,3066
+section =section144,3191
+nav =nav151,3340
+article =article159,3520
+aside =aside167,3733
+h1 =h1173,3821
+h2 =h2179,3903
+h3 =h3185,3985
+h4 =h4191,4067
+h5 =h5197,4149
+h6 =h6203,4231
+header =header211,4449
+footer =footer219,4688
+address =address225,4834
+main' =main'233,5035
+p =p241,5202
+hr =hr249,5377
+pre =pre257,5544
+blockquote =blockquote263,5694
+ol =ol269,5827
+ul =ul275,5946
+li =li281,6068
+dl =dl289,6237
+dt =dt295,6364
+dd =dd301,6516
+figure =figure307,6660
+figcaption =figcaption313,6794
+div =div319,6950
+a =a327,7111
+em =em333,7242
+strong =strong339,7367
+small =small347,7597
+s =s353,7744
+cite =cite359,7859
+q =q365,7977
+dfn =dfn373,8140
+abbr =abbr381,8346
+time =time389,8547
+code =code395,8662
+var =var405,9013
+samp =samp411,9150
+kbd =kbd419,9370
+sub =sub425,9479
+sup =sup431,9590
+i =i440,9859
+b =b449,10090
+u =u458,10347
+mark =mark466,10528
+ruby =ruby476,10864
+rt =rt482,10993
+rp =rp491,11241
+bdi =bdi500,11500
+bdo =bdo508,11702
+span =span517,12007
+br =br523,12119
+wbr =wbr531,12348
+ins =ins539,12481
+del =del545,12604
+img =img553,12732
+iframe =iframe559,12848
+embed =embed567,13042
+object =object575,13274
+param =param581,13437
+video =video587,13598
+audio =audio593,13726
+source =source601,13917
+track =track609,14098
+canvas =canvas615,14240
+map =map623,14471
+area =area629,14605
+svg =svg636,14732
+math =math642,14851
+table =table650,15004
+caption =caption656,15131
+colgroup =colgroup662,15282
+col =col668,15410
+tbody =tbody675,15572
+thead =thead682,15738
+tfoot =tfoot689,15907
+tr =tr695,16034
+td =td701,16152
+th =th707,16272
+form =form717,16460
+fieldset =fieldset723,16583
+legend =legend729,16723
+label =label735,16859
+input =input741,17017
+button =button747,17131
+select =select753,17290
+datalist =datalist759,17446
+optgroup =optgroup765,17595
+option =option773,17778
+textarea =textarea779,17917
+keygen =keygen785,18057
+output =output791,18192
+progress =progress797,18335
+meter =meter805,18512
+details =details815,18718
+summary =summary821,18880
+menuitem =menuitem827,19026
+menu =menu833,19154
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Array.elm,560
+module ArrayArray1,0
+type Array a =type43,945
+type ArrayArray43,945
+initialize =initialize54,1308
+repeat n e =repeat66,1617
+fromList =fromList73,1723
+toList =toList82,1877
+toIndexedList array =toIndexedList93,2161
+map =map102,2412
+indexedMap =indexedMap111,2625
+foldl =foldl120,2846
+foldr =foldr129,3046
+filter isOkay arr =filter138,3233
+empty =empty153,3481
+push =push162,3639
+get i array =get175,3949
+set =set188,4285
+slice =slice209,5028
+length =length218,5157
+isEmpty array =isEmpty227,5282
+append =append236,5469
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Basics.elm,1996
+module BasicsBasics1,0
+@docs (==), (/=@docs19,548
+@docs (<), (>), (<=), (>=@docs28,824
+radians t =radians71,1687
+degrees =degrees77,1787
+turns =turns85,1932
+fromPolar =fromPolar91,2084
+toPolar =toPolar97,2242
+(+) =(+)103,2317
+(-) =(-)109,2384
+(*) =(*)115,2451
+(/) =(/)121,2541
+(//) =(//)138,2748
+rem =rem148,2907
+(%) =(%)158,3078
+(^) =(^)167,3175
+cos =cos173,3230
+sin =sin179,3285
+tan =tan185,3340
+acos =acos191,3396
+asin =asin197,3454
+atan =atan207,3796
+atan2 =atan2218,4170
+sqrt =sqrt224,4265
+negate =negate235,4406
+abs =abs241,4507
+logBase =logBase251,4679
+clamp =clamp263,4949
+pi =pi269,5023
+e =e275,5089
+release, the compiler will detect when `(==release,289,5629
+(==(=298,6106
+(==) =(==)299,6128
+So `(a /= b)` is the same as `(not (a ==So305,6209
+(/=(/307,6259
+(/=) =(/=)308,6281
+(<) =(<)314,6355
+(>) =(>)320,6427
+(<=(<325,6460
+(<=) =(<=)326,6500
+(>=(>331,6534
+(>=) =(>=)332,6574
+infix 4 ==infix336,6602
+infix 4 /=infix337,6613
+infix 4 <=infix340,6644
+infix 4 >=infix341,6655
+compare =compare349,6945
+type Order =type356,7093
+type OrderOrder356,7093
+min =min361,7210
+max =max367,7326
+(&&) =(&&)378,7647
+(||) =(||)389,7973
+xor =xor399,8127
+not =not409,8250
+round =round417,8361
+truncate =truncate423,8466
+floor =floor429,8563
+ceiling =ceiling435,8656
+toFloat =toFloat441,8755
+isNaN =isNaN455,9152
+isInfinite =isInfinite470,9541
+toString =toString482,9873
+(++) =(++)492,10119
+(<<) g f x =(<<)515,10593
+(>>) f g x =(>>)528,10994
+{-| Forward function application `x |> f =={-|532,11019
+(|>) x f =(|>)546,11396
+{-| Backward function application `f <| x =={-|550,11415
+(<|) f x =(<|)560,11729
+identity x =identity574,11958
+always a _ =always592,12493
+fst (a,_) =fst598,12578
+snd (_,b) =snd604,12663
+flip f b a =flip610,12783
+curry f a b =curry618,12954
+uncurry f (a,b) =uncurry626,13120
+type Never =type638,13540
+type NeverNever638,13540
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Color.elm,1579
+module ColorColor1,0
+type ColorColor60,1791
+    = RGBARGBA61,1802
+    | HSLAHSLA62,1831
+rgba =rgba68,2041
+rgb r g b =rgb74,2157
+hsla hue saturation lightness alpha =hsla82,2346
+hsl hue saturation lightness =hsl101,3083
+grayscale p =grayscale108,3243
+greyscale p =greyscale115,3371
+complement color =complement123,3575
+toHsl color =toHsl138,3916
+toRgb color =toRgb153,4270
+fmod f n =fmod170,4603
+rgbToHsl red green blue =rgbToHsl178,4749
+hslToRgb hue saturation lightness =hslToRgb211,5395
+type GradientGradient239,6055
+  = LinearLinear240,6069
+  | RadialRadial241,6129
+linear =linear250,6550
+radial =radial261,7000
+lightRed =lightRed269,7063
+red =red275,7113
+darkRed =darkRed281,7160
+lightOrange =lightOrange287,7215
+orange =orange293,7272
+darkOrange =darkOrange299,7327
+lightYellow =lightYellow305,7386
+yellow =yellow311,7443
+darkYellow =darkYellow317,7498
+lightGreen =lightGreen323,7557
+green =green329,7612
+darkGreen =darkGreen335,7666
+lightBlue =lightBlue341,7722
+blue =blue347,7776
+darkBlue =darkBlue353,7828
+lightPurple =lightPurple359,7886
+purple =purple365,7944
+darkPurple =darkPurple371,8000
+lightBrown =lightBrown377,8059
+brown =brown383,8115
+darkBrown =darkBrown389,8169
+black =black395,8221
+white =white401,8266
+lightGrey =lightGrey407,8321
+grey =grey413,8375
+darkGrey =darkGrey419,8428
+lightGray =lightGray425,8486
+gray =gray431,8540
+darkGray =darkGray437,8593
+lightCharcoal =lightCharcoal443,8655
+charcoal =charcoal449,8717
+darkCharcoal =darkCharcoal455,8775
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Result.elm,466
+module ResultResult1,0
+type ResultResult31,600
+    = OkOk32,624
+    | ErrErr33,639
+withDefault def result =withDefault43,955
+map func ra =map59,1344
+map2 func ra rb =map273,1886
+map3 func ra rb rc =map382,2110
+map4 func ra rb rc rd =map492,2402
+map5 func ra rb rc rd re =map5103,2768
+andThen result callback =andThen147,4311
+formatError f result =formatError169,4991
+toMaybe result =toMaybe185,5407
+fromMaybe err maybe =fromMaybe201,5820
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Date.elm,497
+module DateDate1,0
+type Date =type35,627
+type DateDate35,627
+now =now41,723
+type Day =type51,834
+type DayDay51,834
+type MonthMonth56,928
+    = JanJan57,939
+    | MayMay58,967
+    | SepSep59,995
+fromString =fromString65,1112
+toTime =toTime75,1327
+fromTime =fromTime85,1538
+year =year93,1706
+month =month101,1884
+day =day109,2042
+dayOfWeek =dayOfWeek117,2229
+hour =hour125,2397
+minute =minute133,2559
+second =second141,2724
+millisecond =millisecond149,2908
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/String.elm,1059
+module StringString1,0
+isEmpty =isEmpty52,1353
+cons =cons61,1540
+fromChar char =fromChar70,1668
+uncons =uncons81,1934
+append =append91,2135
+concat =concat100,2295
+length =length111,2439
+map =map120,2623
+filter =filter129,2791
+reverse =reverse138,2915
+foldl =foldl147,3070
+foldr =foldr156,3222
+split =split168,3539
+join =join179,3839
+repeat =repeat188,3967
+slice =slice201,4354
+left =left210,4505
+right =right219,4657
+dropLeft =dropLeft228,4836
+dropRight =dropRight237,5036
+pad =pad248,5271
+padLeft =padLeft259,5508
+padRight =padRight270,5758
+trim =trim279,5909
+trimLeft =trimLeft288,6062
+trimRight =trimRight297,6224
+words =words306,6433
+lines =lines315,6614
+toUpper =toUpper325,6813
+toLower =toLower334,6996
+any =any345,7232
+all =all356,7461
+contains =contains369,7769
+startsWith =startsWith379,7982
+endsWith =endsWith389,8191
+indexes =indexes400,8459
+indices =indices406,8562
+toInt =toInt424,9186
+toFloat =toFloat442,9794
+toList =toList451,9943
+fromList =fromList462,10195
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Bitwise.elm,214
+module BitwiseBitwise1,0
+and =and23,374
+or =or30,444
+xor =xor37,514
+complement =complement44,627
+shiftLeft =shiftLeft55,886
+shiftRight =shiftRight72,1443
+shiftRightLogical =shiftRightLogical89,1940
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Maybe.elm,394
+module MaybeMaybe1,0
+type MaybeMaybe36,841
+    = JustJust37,854
+    | NothingNothing38,867
+withDefault default maybe =withDefault52,1247
+oneOf maybes =oneOf66,1677
+map f maybe =map83,1997
+map2 func ma mb =map296,2342
+map3 func ma mb mc =map3107,2548
+map4 func ma mb mc md =map4118,2786
+map5 func ma mb mc md me =map5129,3056
+andThen maybeValue callback =andThen171,4315
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Regex.elm,380
+module RegexRegex1,0
+type Regex =type32,710
+type RegexRegex32,710
+escape =escape40,971
+regex =regex51,1411
+caseInsensitive =caseInsensitive58,1513
+contains =contains71,1832
+type alias Match =type92,2956
+type alias MatchMatch92,2956
+type HowMany =type104,3302
+type HowManyHowMany104,3302
+find =find120,3780
+replace =replace136,4278
+split =split147,4549
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Platform.elm,363
+module PlatformPlatform1,0
+type Program flags =type57,1389
+type ProgramProgram57,1389
+type Task err ok =type67,1603
+type TaskTask67,1603
+type ProcessId =type74,1788
+type ProcessIdProcessId74,1788
+type Router appMsg selfMsg =type84,1980
+type RouterRouter84,1980
+sendToApp =sendToApp92,2222
+sendToSelf =sendToSelf103,2544
+hack =hack107,2588
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Debug.elm,62
+module DebugDebug1,0
+log =log25,552
+crash =crash60,1622
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Platform/Sub.elm,146
+module Platform.SubPlatform.Sub1,0
+type Sub msg =type32,1077
+type SubSub32,1077
+map =map37,1141
+batch =batch43,1211
+none =none49,1266
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Platform/Cmd.elm,179
+module Platform.CmdPlatform.Cmd1,0
+type Cmd msg =type42,1277
+type CmdCmd42,1277
+map =map47,1341
+batch =batch53,1411
+none =none59,1466
+(!) model commands =(!)65,1542
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Time.elm,1017
+effect module Time where { subscription =effect1,0
+type alias Time =type39,766
+type alias TimeTime39,766
+now =now45,869
+every interval tagger =every70,1712
+millisecond =millisecond82,1964
+second =second88,2004
+minute =minute94,2056
+hour =hour100,2099
+inMilliseconds t =inMilliseconds106,2159
+inSeconds t =inSeconds112,2216
+inMinutes t =inMinutes118,2277
+inHours t =inHours124,2336
+type MySub msg =type132,2381
+type MySubMySub132,2381
+subMap f (Every interval tagger) =subMap137,2467
+type alias State msg =type145,2556
+type alias StateState145,2556
+type alias Processes =type151,2637
+type alias ProcessesProcesses151,2637
+type alias Taggers msg =type155,2698
+type alias TaggersTaggers155,2698
+init =init160,2793
+onEffects router subs {processes} =onEffects165,2943
+addMySub (Every interval tagger) state =addMySub198,3873
+spawnHelp router intervals processes =spawnHelp208,4169
+onSelfMsg router interval state =onSelfMsg221,4563
+setInterval =setInterval237,4944
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Set.elm,836
+module SetSet1,0
+type Set t =type45,842
+type SetSet45,842
+empty =empty52,934
+singleton k =singleton59,1050
+insert k (Set_elm_builtin d) =insert66,1197
+remove k (Set_elm_builtin d) =remove73,1408
+isEmpty (Set_elm_builtin d) =isEmpty80,1538
+member k (Set_elm_builtin d) =member87,1674
+size (Set_elm_builtin d) =size94,1795
+union (Set_elm_builtin d1) (Set_elm_builtin d2) =union101,1948
+intersect (Set_elm_builtin d1) (Set_elm_builtin d2) =intersect108,2181
+diff (Set_elm_builtin d1) (Set_elm_builtin d2) =diff116,2452
+toList (Set_elm_builtin d) =toList123,2648
+fromList xs =fromList130,2797
+foldl f b (Set_elm_builtin d) =foldl136,2970
+foldr f b (Set_elm_builtin d) =foldr143,3169
+map f s =map150,3382
+filter p (Set_elm_builtin d) =filter156,3572
+partition p (Set_elm_builtin d) =partition164,3877
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Task.elm,1000
+effect module Task where { command =effect1,0
+type alias Task err ok =type51,1260
+type alias TaskTask51,1260
+succeed =succeed64,1433
+fail =fail73,1583
+map func taskA =map86,1733
+map2 func taskA taskB =map298,2106
+map3 func taskA taskB taskC =map3106,2295
+map4 func taskA taskB taskC taskD =map4115,2535
+map5 func taskA taskB taskC taskD taskE =map5125,2826
+andMap taskFunc taskValue =andMap144,3452
+sequence tasks =sequence159,3932
+andThen =andThen182,4532
+onError =onError195,4872
+mapError f task =mapError209,5241
+toMaybe task =toMaybe222,5676
+fromMaybe default maybe =fromMaybe233,6009
+toResult task =toResult251,6527
+fromResult result =fromResult262,6851
+type MyCmd msg =type275,6972
+type MyCmdMyCmd275,6972
+perform onFail onSuccess task =perform286,7394
+cmdMap tagger (T task) =cmdMap291,7538
+init =init300,7622
+onEffects router commands state =onEffects305,7725
+onSelfMsg _ _ _ =onSelfMsg312,7905
+spawnCmd router (T task) =spawnCmd317,8001
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Dict.elm,1888
+module DictDict1,0
+type NColorNColor53,1024
+    = RedRed54,1036
+    | BlackBlack55,1046
+    | BBlackBBlack56,1058
+    | NBlackNBlack57,1126
+type LeafColorLeafColor60,1199
+    = LBlackLBlack61,1214
+    | LBBlackLBBlack62,1227
+type DictDict69,1440
+    = RBNode_elm_builtinRBNode_elm_builtin70,1454
+    | RBEmpty_elm_builtinRBEmpty_elm_builtin71,1512
+empty =empty76,1602
+maxWithDefault k v r =maxWithDefault81,1687
+get targetKey dict =get102,2215
+member key dict =member121,2601
+size dict =size132,2786
+sizeHelp n dict =sizeHelp137,2852
+isEmpty dict =isEmpty151,3108
+ensureBlackRoot dict =ensureBlackRoot167,3449
+insert key value dict =insert179,3772
+remove key dict =remove186,3996
+type Flag =type190,4051
+type FlagFlag190,4051
+update k alter dict =update195,4256
+singleton key value =singleton258,5959
+isBBlack dict =isBBlack267,6050
+moreBlack color =moreBlack280,6233
+lessBlack color =lessBlack296,6458
+lessBlackTree dict =lessBlackTree320,6906
+reportRemBug msg c lgot rgot =reportRemBug330,7147
+rem c l r =rem341,7537
+bubble c k v l r =bubble384,8733
+removeMax c k v l r =removeMax394,9013
+balance c k v l r =balance405,9281
+blackish t =blackish418,9458
+balanceHelp tree =balanceHelp428,9629
+balancedTree col xk xv yk yv zk zv a b c d =balancedTree458,11097
+blacken t =blacken469,11339
+redden t =redden480,11558
+union t1 t2 =union497,11920
+intersect t1 t2 =intersect505,12160
+diff t1 t2 =diff512,12365
+merge leftStep bothStep rightStep leftDict rightDict initialResult =merge534,12931
+map f dict =map564,13756
+foldl f acc dict =foldl577,14136
+foldr f acc t =foldr590,14476
+filter predicate dictionary =filter601,14785
+partition predicate dict =partition618,15243
+keys dict =keys639,15645
+values dict =values648,15892
+toList dict =toList654,16108
+fromList assocs =fromList660,16287
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/List.elm,1347
+module ListList1,0
+(::) =(::)62,1423
+head list =head75,1585
+tail list =tail90,1791
+isEmpty xs =isEmpty104,1960
+member x xs =member119,2175
+map f xs =map130,2388
+indexedMap f xs =indexedMap140,2669
+foldl func acc list =foldl149,2840
+foldr =foldr163,3057
+scanl f b xs =scanl172,3270
+filter pred xs =filter190,3595
+filterMap f xs =filterMap217,4085
+maybeCons f mx xs =maybeCons222,4184
+length xs =length236,4361
+reverse list =reverse245,4487
+all isOkay list =all256,4703
+any isOkay list =any267,4935
+append xs ys =append289,5363
+concat lists =concat303,5579
+concatMap f list =concatMap312,5780
+sum numbers =sum321,5914
+product numbers =product330,6055
+maximum list =maximum340,6258
+minimum list =minimum355,6518
+partition pred list =partition372,6951
+map2 =map2396,7514
+map3 =map3402,7624
+map4 =map4408,7749
+map5 =map5414,7889
+unzip pairs =unzip423,8099
+intersperse sep xs =intersperse436,8410
+take n list =take457,8725
+takeFast ctr n list =takeFast462,8809
+takeTailRec n list =takeTailRec489,9313
+takeReverse n list taken =takeReverse494,9424
+drop n list =drop511,9699
+repeat n value =repeat529,9951
+repeatHelp result n value =repeatHelp534,10036
+sort xs =sort547,10260
+sortBy =sortBy563,10688
+to define any other: `sort ==to578,10998
+sortWith =sortWith581,11099
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Json/Encode.elm,276
+module Json.EncodeJson.Encode1,0
+type Value =type30,397
+type ValueValue30,397
+encode =encode52,844
+string =string58,909
+int =int64,970
+float =float71,1093
+bool =bool77,1155
+null =null83,1208
+object =object89,1289
+array =array95,1364
+list =list101,1435
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Json/Decode.elm,1414
+module Json.DecodeJson.Decode1,0
+@docs (:=@docs31,779
+type Decoder a =type56,1453
+type DecoderDecoder56,1453
+type alias Value =type61,1518
+type alias ValueValue61,1518
+map =map85,2034
+decodeString =decodeString96,2414
+really a helper function so you do not need to write `(:=really103,2548
+at fields decoder =at116,2866
+(:=(:133,3271
+(:=) =(:=)134,3311
+object1 =object1144,3577
+object2 =object2158,3916
+object3 =object3175,4364
+object4 =object4181,4519
+object5 =object5187,4692
+object6 =object6193,4883
+object7 =object7199,5092
+object8 =object8205,5319
+keyValuePairs =keyValuePairs218,5708
+dict decoder =dict231,6120
+oneOf =oneOf254,6700
+string =string267,6885
+float =float280,7083
+int =int293,7260
+bool =bool306,7454
+list decoder =list319,7659
+array decoder =array332,7886
+null =null354,8387
+maybe decoder =maybe386,9354
+value =value411,10303
+        = RectangleRectangle427,10755
+        | CircleCircle428,10787
+decodeValue =decodeValue433,10929
+customDecoder =customDecoder441,11147
+      = RectangleRectangle456,11621
+      | CircleCircle457,11651
+andThen =andThen476,12122
+fail =fail494,12635
+succeed =succeed513,13135
+tuple1 =tuple1533,13592
+tuple2 =tuple2553,14060
+tuple3 =tuple3566,14362
+tuple4 =tuple4572,14514
+tuple5 =tuple5578,14684
+tuple6 =tuple6584,14872
+tuple7 =tuple7590,15078
+tuple8 =tuple8596,15302
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Char.elm,518
+module CharChar1,0
+import Basics exposing ((&&), (||), (>=), (<=import22,478
+isBetween low high char =isBetween26,569
+isUpper =isUpper34,744
+isLower =isLower40,841
+isDigit =isDigit46,934
+isOctDigit =isOctDigit52,1036
+isHexDigit char =isHexDigit58,1153
+toUpper =toUpper64,1293
+toLower =toLower70,1380
+toLocaleUpper =toLocaleUpper76,1521
+toLocaleLower =toLocaleLower82,1674
+type alias KeyCode =type90,1908
+type alias KeyCodeKeyCode90,1908
+toCode =toCode96,1988
+fromCode =fromCode102,2077
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Process.elm,146
+module ProcessProcess1,0
+type alias Id =type66,2401
+type alias IdId66,2401
+spawn =spawn82,2937
+sleep =sleep93,3262
+kill =kill103,3593
+
+elm-stuff/packages/elm-lang/core/4.0.5/src/Random.elm,1745
+effect module Random where { command =effect1,0
+type ofof15,349
+bool =bool74,1792
+int a b =int89,2219
+iLogBase b i =iLogBase118,2772
+maxInt =maxInt127,2931
+minInt =minInt133,3041
+float a b =float145,3297
+pair genA genB =pair177,3996
+list n (Generator generate) =list196,4391
+listHelp list n generate seed =listHelp202,4552
+map func (Generator genA) =map235,5271
+map2 func (Generator genA) (Generator genB) =map2254,5703
+map3 func (Generator genA) (Generator genB) (Generator genC) =map3276,6271
+map4 func (Generator genA) (Generator genB) (Generator genC) (Generator genD) =map4289,6630
+map5 func (Generator genA) (Generator genB) (Generator genC) (Generator genD) (Generator genE) =map5303,7058
+andThen (Generator generate) callback =andThen329,7842
+type Generator a =type352,8405
+type GeneratorGenerator352,8405
+type State =type356,8460
+type StateState356,8460
+type Seed =type362,8626
+type SeedSeed362,8626
+step (Generator generator) seed =step395,9680
+initialSeed n =initialSeed405,10006
+initState s' =initState418,10264
+magicNum0 =magicNum0428,10419
+magicNum1 =magicNum1429,10437
+magicNum2 =magicNum2430,10455
+magicNum3 =magicNum3431,10473
+magicNum4 =magicNum4432,10491
+magicNum5 =magicNum5433,10509
+magicNum6 =magicNum6434,10526
+magicNum7 =magicNum7435,10549
+magicNum8 =magicNum8436,10572
+next (State s1 s2) =next440,10626
+split (State s1 s2 as std) =split460,11339
+range _ =range475,11608
+generate tagger generator =generate492,12102
+type MyCmd msg =type496,12176
+type MyCmdMyCmd496,12176
+cmdMap func (Generate generator) =cmdMap500,12260
+init =init505,12352
+onEffects router commands seed =onEffects511,12519
+onSelfMsg _ _ seed =onSelfMsg528,12902
+
+elm-stuff/packages/elm-lang/core/4.0.5/tests/Test.elm,61
+module MainMain1,0
+tests =tests21,458
+main =main39,807
+
+elm-stuff/packages/elm-lang/core/4.0.5/tests/Test/Array.elm,153
+module Test.ArrayTest.Array1,0
+mergeSplit n arr =mergeSplit13,246
+holeArray =holeArray19,407
+mapArray array =mapArray22,518
+tests =tests30,678
+
+elm-stuff/packages/elm-lang/core/4.0.5/tests/Test/Basics.elm,56
+module Test.BasicsTest.Basics1,0
+tests =tests11,156
+
+elm-stuff/packages/elm-lang/core/4.0.5/tests/Test/Result.elm,162
+module Test.ResultTest.Result1,0
+isEven n =isEven10,160
+add3 a b c =add315,231
+add4 a b c d =add418,257
+add5 a b c d e =add521,289
+tests =tests25,340
+
+elm-stuff/packages/elm-lang/core/4.0.5/tests/Test/String.elm,56
+module Test.StringTest.String1,0
+tests =tests12,163
+
+elm-stuff/packages/elm-lang/core/4.0.5/tests/Test/Bitwise.elm,57
+module Test.BitwiseTest.Bitwise1,0
+tests =tests9,125
+
+elm-stuff/packages/elm-lang/core/4.0.5/tests/Test/Regex.elm,54
+module Test.RegexTest.Regex1,0
+tests =tests11,137
+
+elm-stuff/packages/elm-lang/core/4.0.5/tests/Test/CodeGen.elm,283
+module Test.CodeGenTest.CodeGen1,0
+type Wrapper a =type10,138
+type WrapperWrapper10,138
+casePrime m' =casePrime13,167
+patternPrime =patternPrime18,239
+letQualified =letQualified23,318
+caseQualified =caseQualified27,377
+caseScope =caseScope33,480
+tests =tests40,610
+
+elm-stuff/packages/elm-lang/core/4.0.5/tests/Test/Equality.elm,124
+module Test.EqualityTest.Equality1,0
+type DifferentDifferent8,125
+    = AA9,140
+    | BB10,155
+tests =tests13,188
+
+elm-stuff/packages/elm-lang/core/4.0.5/tests/Test/Json.elm,166
+module Test.JsonTest.Json1,0
+import Json.Decode as Json exposing ((:=import5,91
+tests =tests12,193
+intTests =intTests20,280
+customTests =customTests57,1615
+
+elm-stuff/packages/elm-lang/core/4.0.5/tests/Test/Set.elm,147
+module Test.SetTest.Set1,0
+set =set12,157
+setPart1 =setPart115,205
+setPart2 =setPart218,257
+pred x = x <=pred21,311
+tests =tests24,342
+
+elm-stuff/packages/elm-lang/core/4.0.5/tests/Test/Dict.elm,77
+module Test.DictTest.Dict1,0
+animals =animals11,179
+tests =tests14,256
+
+elm-stuff/packages/elm-lang/core/4.0.5/tests/Test/List.elm,87
+module Test.ListTest.List1,0
+tests =tests11,179
+testListOfN n =testListOfN20,313
+
+elm-stuff/packages/elm-lang/core/4.0.5/tests/Test/Char.elm,309
+module Test.CharTest.Char1,0
+lower =lower10,133
+upper =upper11,274
+dec =dec12,415
+oct =oct13,474
+hexLower =hexLower14,496
+hexUpper =hexUpper15,525
+hex =hex16,554
+lowerCodes =lowerCodes18,610
+upperCodes =upperCodes19,658
+decCodes =decCodes20,706
+oneOf =oneOf23,779
+tests =tests27,819
+
+elm-stuff/packages/elm-lang/virtual-dom/1.1.1/src/VirtualDom.elm,655
+module VirtualDomVirtualDom1,0
+type Node msg =type45,817
+type NodeNode45,817
+node =node65,1325
+text =text75,1518
+map =map101,2245
+type Property msg =type125,3179
+type PropertyProperty125,3179
+property =property142,3615
+attribute =attribute159,4067
+attributeNS =attributeNS169,4452
+style =style189,4825
+on eventName decoder =on211,5363
+onWithOptions =onWithOptions218,5558
+type alias Options =type228,5975
+type alias OptionsOptions228,5975
+defaultOptions =defaultOptions242,6220
+lazy =lazy261,6828
+lazy2 =lazy2268,6964
+lazy3 =lazy3275,7114
+keyedNode =keyedNode285,7500
+programWithFlags =programWithFlags307,8145
+
+elm-stuff/packages/elm-lang/virtual-dom/1.1.1/tests/TestMain.elm,47
+tests =tests10,190
+port runner =port18,330
+
+elm-stuff/packages/elm-lang/virtual-dom/1.1.1/tests/TestCases/Lazy.elm,415
+module TestCases.LazyTestCases.Lazy1,0
+renderRecord r =renderRecord10,312
+renderPrimitive x =renderPrimitive15,421
+testLazyIdenticalRecord =testLazyIdenticalRecord19,496
+testLazyIdenticalPrimitive =testLazyIdenticalPrimitive30,933
+testLazyRecordMutationOfIdenticalValue =testLazyRecordMutationOfIdenticalValue40,1322
+testNotLazyDifferentRecord =testNotLazyDifferentRecord51,1829
+tests =tests62,2297
+
+elm-stuff/packages/elm-lang/virtual-dom/1.1.1/tests/TestHelpers.elm,354
+module TestHelpersTestHelpers1,0
+unsafeRecordCallCount =unsafeRecordCallCount9,158
+unsafeQueryCallCount =unsafeQueryCallCount13,267
+type OpaqueDom =type16,335
+type OpaqueDomOpaqueDom16,335
+render =render19,390
+updateAndReplace =updateAndReplace23,487
+renderDom vdom =renderDom28,586
+updateDom (oldDom, oldVDom) newVDom =updateDom33,688
+
+Model.elm,77
+module ModelModel1,0
+type alias Post =type4,29
+type alias PostPost4,29
+
+Api.elm,97
+module ApiApi1,0
+getEventFeedEvents =getEventFeedEvents15,260
+decodePost =decodePost20,388
