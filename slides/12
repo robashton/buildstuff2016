@@ -1,0 +1,5 @@
+Working in a team
+==
+- Stick to the Elm Architecture
+- use elm-format
+- Automate builds/installation (Make)

@@ -1,0 +1,9 @@
+Building a goddamned web-app
+===
+
+- Not a mario app
+- Web apps: 
+  - Take data from one place
+  - Display the data
+  - Allow actions to change that data
+- Makes sense to optimise for this.

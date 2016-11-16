@@ -1,0 +1,40 @@
+- Who is Rob? (Tame Barista, Erlang/Elm Developer (three years))
+- What is Elm? ( Functional language + core libraries/patterns )#
+- 0.16 / 0.17 / 0.18 (Many changes, not backwards compatible, working on solving all of the problems)
+- Focus on total and utter usability (Contrast to Haskell)
+
+Slides in vim, Code in Emacs (troll)
+
+(elm-repl) 
+
+- Basic language bits (Numbers, etc)
+- Basic functions/libraries
+- List.map [ 2, 3 , 4) +
+- Maybe (Just/Nothing and the functions it has)
+- Records
+- Type errors
+
+-- Haskell developers be ragin' right now
+
+==== 20 minutes ====
+
+Building a goddamned web app
+
+- elm init/package/etc
+- elm app/pattern (init, update,view, subscriptions)
+- calling web services
+
+==== 40 minutes ==== 
+
+Making it better
+
+Google MDL (AHAhahahaa description)
+- Add it as a dep, throw in the scaffolding, look how pretty
+
+Working as a team
+
+- Stick to the 'Elm Architecture'
+- use elm-format, no arguments
+- makefiles to recompile as part of your app and set up initial package dir
+
+==== Finished =====
