@@ -1,3 +1,4 @@
 
 elm package install elm-lang/html
- elm package install evancz/elm-http
+elm package install evancz/elm-http
+elm package install NoRedInk/elm-decode-pipelineg
