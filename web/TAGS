@@ -1,15 +1,19 @@
 
-Main.elm,301
+Main.elm,436
 module MainMain1,0
-type ModelModel6,52
-    = ModelNotImplementedModelNotImplemented7,63
-type MsgMsg10,91
-    = MsgNotImplementedMsgNotImplemented11,100
-init =init15,152
-update msg model =update22,252
-view model =view29,375
-subscriptions model =subscriptions33,454
-main =main36,490
+type alias Model =type13,186
+type alias ModelModel13,186
+type MsgMsg19,259
+    = IncreaseMyNumberYoIncreaseMyNumberYo20,268
+    | ThatShitWentWrongThatShitWentWrong21,293
+    | CoolStuffCoolStuff22,328
+init =init26,384
+getPosts =getPosts34,460
+update msg model =update39,575
+view model =view53,933
+postView post =postView68,1340
+subscriptions model =subscriptions76,1482
+main =main80,1519
 
 elm-stuff/packages/evancz/elm-http/3.0.1/src/Blob.elm,180
 module BlobBlob1,0

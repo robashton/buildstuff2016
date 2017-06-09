@@ -1,61 +1,74 @@
 module Main exposing (..)
 
+import Html as App
 import Html exposing (..)
-import Html.App as App
-import Model exposing (..)
+import Html.Events exposing (..)
+import Http
 import Api
 import Task
-import Http
+import Model exposing (..)
+import Maybe
 
 
 type alias Model =
-    { posts : Maybe (List Post)
+    { x : Int
+    , posts : Maybe (List Post)
     }
 
 
 type Msg
-    = HttpFail Http.Error
-    | PostsLoaded (List Post)
+    = IncreaseMyNumberYo
+    | CoolStuff (Result Http.Error (List Post))
 
 
 init : ( Model, Cmd Msg )
 init =
-    ( { posts = Nothing
+    ( { x = 5
+      , posts = Nothing
       }
-    , loadPosts
+    , getPosts
     )
 
 
-loadPosts =
-    Task.perform HttpFail PostsLoaded Api.getPosts
+getPosts =
+    Http.send CoolStuff Api.getPosts
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        PostsLoaded posts ->
-            ( { model | posts = Just posts }, Cmd.none )
+        IncreaseMyNumberYo ->
+            ( { model | x = model.x + 1 }, Cmd.none )
 
-        HttpFail reason ->
-            -- Ignore because I cba writing the html for it
-            Debug.log (toString reason)
-                ( model, Cmd.none )
+        CoolStuff result ->
+            case result of
+                Ok posts ->
+                    ( { model | posts = Just posts }, Cmd.none )
+
+                Err _ ->
+                    -- Sssh ignore it like a simple JS developer would
+                    ( model, Cmd.none )
 
 
-view : Model -> Html msg
+view : Model -> Html Msg
 view model =
-    case model.posts of
-        Nothing ->
-            p [] [ text "Loading.." ]
-
-        Just posts ->
-            div [] <| List.map viewPost posts
-
-
-viewPost : Post -> Html msg
-viewPost post =
     div []
-        [ h5 [] [ text post.title ]
+        [ p [] [ text <| "My Number is " ++ (toString model.x) ]
+        , button [ onClick IncreaseMyNumberYo ] [ text "Click me!" ]
+        , (case model.posts of
+            Nothing ->
+                p [] [ text "Loading..." ]
+
+            Just posts ->
+                div [] <| List.map postView posts
+          )
+        ]
+
+
+postView : Post -> Html msg
+postView post =
+    div []
+        [ h2 [] [ text post.title ]
         , p [] [ text post.body ]
         ]
 

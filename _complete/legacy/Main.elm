@@ -1,7 +1,7 @@
 module Main exposing (..)
 
 import Html exposing (..)
-import Html as App
+import Html.App as App
 import Model exposing (..)
 import Api
 import Task
@@ -25,8 +25,9 @@ type alias Model =
 
 
 type Msg
-    = Mdl (Material.Msg Msg)
-    | GetPostsResponse (Result Http.Error (List Post))
+    = HttpFail Http.Error
+    | Mdl (Material.Msg Msg)
+    | PostsLoaded (List Post)
 
 
 init : ( Model, Cmd Msg )
@@ -42,19 +43,19 @@ init =
 
 
 loadPosts =
-    Http.send GetPostsResponse Api.getPosts
+    Task.perform HttpFail PostsLoaded Api.getPosts
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        Mdl msg_ ->
-            Material.update Mdl msg_ model
+        Mdl msg' ->
+            Material.update msg' model
 
-        GetPostsResponse (Ok posts) ->
+        PostsLoaded posts ->
             ( { model | posts = Just posts }, Cmd.none )
 
-        GetPostsResponse (Err reason) ->
+        HttpFail reason ->
             -- Ignore because I cba writing the html for it
             Debug.log (toString reason)
                 ( model, Cmd.none )
@@ -77,12 +78,12 @@ view model =
 header : Model -> List (Html Msg)
 header model =
     [ Layout.row []
-        [ Layout.title [] [ text "Cool Devsum Demo" ]
+        [ Layout.title [] [ text "Cool BuildStuff Demo" ]
         , Layout.spacer
         , div []
             [ Layout.navigation []
-                [ Layout.link [ Layout.href "http://devsum.se" ]
-                    [ div [] [ text "Devsum" ] ]
+                [ Layout.link [ Layout.href "http://buildstuff.lt" ]
+                    [ div [] [ text "BuildStuff" ] ]
                 ]
             ]
         , div [] []

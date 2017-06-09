@@ -1,8 +1,8 @@
 Elm Versions
 ==
 
-- 0.16 (all the demos are written in this)
-- 0.17 (all our code is written in this)
-- 0.18 (released last week)
+- 0.16 (a lot of the public demos are written in this)
+- 0.17 (we finished migrating our code off this last week)
+- 0.18 (current version)
 
 They break stuff, you deal with it 

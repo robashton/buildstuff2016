@@ -12,9 +12,9 @@ import Json.Decode as Json exposing (..)
 import Json.Decode.Pipeline exposing (required, decode, optional)
 
 
-getPosts : Platform.Task Http.Error (List Post)
+getPosts : Http.Request (List Post)
 getPosts =
-    Http.get (list decodePost) "http://jsonplaceholder.typicode.com/posts"
+    Http.get "http://jsonplaceholder.typicode.com/posts" (list decodePost)
 
 
 decodePost : Json.Decoder Post
