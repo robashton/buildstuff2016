@@ -18,7 +18,7 @@ type alias Model =
 
 type Msg
     = IncreaseMyNumberYo
-    | CoolStuff (Result Http.Error (List Post))
+    | GetPostsResponse (Result Http.Error (List Post))
 
 
 init : ( Model, Cmd Msg )
@@ -31,7 +31,7 @@ init =
 
 
 getPosts =
-    Http.send CoolStuff Api.getPosts
+    Http.send GetPostsResponse Api.getPosts
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -40,7 +40,7 @@ update msg model =
         IncreaseMyNumberYo ->
             ( { model | x = model.x + 1 }, Cmd.none )
 
-        CoolStuff result ->
+        GetPostsResponse result ->
             case result of
                 Ok posts ->
                     ( { model | posts = Just posts }, Cmd.none )
